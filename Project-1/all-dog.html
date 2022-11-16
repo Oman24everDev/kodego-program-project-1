@@ -21,6 +21,14 @@
 
   <!--CSS Style-->
   <link rel="stylesheet" href="css/style.css">
+
+ <!--For Banner Image CSS Internal-->
+  <style>
+    .banner-image {
+      background-image: url('images/all-dog-banner.jpg');
+      background-size: cover;
+    }
+  </style>
 </head>
 
 <body>
@@ -32,7 +40,7 @@
     <div class="header">
 
       <!--Nav Bar Start-->
-      <nav class="navbar navbar-expand-lg bg-secondary bg-opacity-25">
+      <nav class="navbar navbar-expand-lg fixed-top align-content-md-stretch">
         <div class="container">
           <a class="navbar-brand" href="index.html">
             <img src="images/bulldog-logo.png" width="50" alt="">
@@ -48,19 +56,19 @@
             <ul class="navbar-nav ms-auto mt-2 mt-lg-0">
 
               <li class="nav-item">
-                <a class="nav-link me-3" href="index.html">Home</a>
+                <a class="nav-link me-3 text-white" href="index.html">Home</a>
               </li>
               <li class="nav-item me-3">
-                <a class="nav-link" href="topics.html">Topics</a>
+                <a class="nav-link text-white" href="topics.html">Topics</a>
               </li>
               <li class="nav-item me-3">
-                <a class="nav-link" href="top10.html">Top 10 Dog Breeds</a>
+                <a class="nav-link text-white" href="top10.html">Top 10 Dog Breeds</a>
               </li>
               <li class="nav-item me-3">
-                <a class="nav-link" href="all-dog.html">View All Dog Breeds</a>
+                <a class="nav-link text-white" href="all-dog.html">View All Dog Breeds</a>
               </li>
               <li class="nav-item me-3">
-                <a class="nav-link" href="about.html">About Us</a>
+                <a class="nav-link text-white" href="about.html">About Us</a>
               </li>
 
             </ul>
@@ -69,6 +77,15 @@
         </div>
       </nav>
       <!--Nav Bar End-->
+
+         <!--Banner Image Start-->
+         <div class="banner-image w-100 vh-100 d-flex justify-content-start align-items-center p-4">
+          <div class="content text-start">
+            <h1 class="text-white fw-bold">ALL DOG BREEDS</h1>
+          </div>
+        </div>
+        <!--Banner Image End-->
+
     </div>
     <!--Header End-->
 
@@ -76,17 +93,8 @@
     <div class="list-section">
       <div class="container">
 
-        <div class="current-section mt-3">
-          <div class="row">
-            <div class="col">
-              <h1>ALL DOG BREEDS</h1>
-            </div>
-          </div>
-        </div>
-        <hr>
-
         <!--List A Order Start-->
-        <div class="row">
+        <div class="row mt-4">
           <h1 class="list-title">A</h1>
         </div>
 
@@ -632,6 +640,19 @@
       <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
         crossorigin="anonymous"></script>
+
+        <script>
+          const nav = document.querySelector("nav");
+      
+          window.addEventListener("scroll", function () {
+            if (window.pageYOffset > 100) {
+              nav.classList.add("bg-secondary", "shadow");
+            }
+            else {
+              nav.classList.remove("bg-secondary", "shadow");
+            }
+          })
+        </script>
 </body>
 
 </html>

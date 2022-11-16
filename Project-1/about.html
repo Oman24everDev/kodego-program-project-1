@@ -11,28 +11,36 @@
     href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700&display=swap"
     rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300&display=swap" rel="stylesheet">
-  
+
   <!--Bootstrap CSS-->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
-  
-    <!--Box Icon-->
+
+  <!--Box Icon-->
   <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
-  
+
   <!--CSS Style-->
   <link rel="stylesheet" href="css/style.css">
+
+  <!--For Banner Image CSS Internal-->
+  <style>
+    .banner-image {
+      background-image: url('images/about-banner.jpg');
+      background-size: cover;
+    }
+  </style>
 </head>
 
 <body>
-  
+
   <!--Main Container Start-->
   <div class="main-wrapper">
-  
+
     <!--Header Start-->
     <div class="header">
-      
+
       <!--Nav Bar Start-->
-      <nav class="navbar navbar-expand-lg bg-secondary bg-opacity-25">
+      <nav class="navbar navbar-expand-lg fixed-top align-content-md-stretch">
         <div class="container">
           <a class="navbar-brand" href="index.html">
             <img src="images/bulldog-logo.png" width="50" alt="">
@@ -69,10 +77,19 @@
         </div>
       </nav>
       <!--Nav Bar End-->
+
+        <!--Banner Image Start-->
+        <div class="banner-image w-100 vh-100 d-flex justify-content-start align-items-center p-4">
+          <div class="content text-start">
+            <h1 class="text-dark fw-bold">ABOUT US</h1>
+          </div>
+        </div>
+        <!--Banner Image End-->
+
     </div>
     <!--Header End-->
 
-  
+
   </div>
   <!--Main Container End-->
 
@@ -83,8 +100,8 @@
         <hr>
         <ul class="footer-list">
           <li><a href="#"><i class='bx bxl-facebook-circle'></i></a></li>
-          <li><a href="#"><i class='bx bxl-instagram-alt' ></i></a></li>
-          <li><a href="#"><i class='bx bxl-gmail' ></i></a></li>
+          <li><a href="#"><i class='bx bxl-instagram-alt'></i></a></li>
+          <li><a href="#"><i class='bx bxl-gmail'></i></a></li>
           <li><a href="#"><i class='bx bxl-github'></i></a></li>
         </ul>
       </div>
@@ -97,6 +114,19 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
     crossorigin="anonymous"></script>
+
+    <script>
+      const nav = document.querySelector("nav");
+  
+      window.addEventListener("scroll", function () {
+        if (window.pageYOffset > 100) {
+          nav.classList.add("bg-secondary", "shadow");
+        }
+        else {
+          nav.classList.remove("bg-secondary", "shadow");
+        }
+      })
+    </script>
 </body>
 
 </html>

@@ -1,0 +1,167 @@
+/* General CSS */
+body{
+  margin: 0 auto;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Quicksand', sans-serif;
+  background: #fff;
+  color: #000;
+  overflow-x: hidden;
+}
+
+ul{
+  list-style: none;
+}
+
+img{
+  max-width: 100%;
+}
+
+
+/* Links */
+a{
+  text-decoration: none !important;
+  color: #999;
+  transition: all 0.5s ease-in-out;
+}
+
+a:hover{
+  color: #b48787  !important;
+}
+
+.current-section{
+  position: relative;
+  margin-top: 5rem;
+  text-align: center;
+  letter-spacing: 6px;
+  font-family: 'Poppins', sans-serif;
+  font-size: 3em;
+}
+
+
+.navbar ul li a{
+
+  display: block;
+  font-family: 'Poppins', sans-serif;
+  font-size: 1em;
+  font-weight: 600;
+  letter-spacing: 1px;
+}
+
+.navbar-collapse{
+  text-align: center;
+}
+
+.navbar-toggler:hover{
+  color: #757070;
+}
+
+
+/* Banner Content */
+.banner-section{
+  position: relative;
+  padding-top: 2rem;
+  padding-bottom: 3rem;
+}
+
+.banner-section .banner-title{
+  position: relative;
+  margin: 0;
+  padding-top: 1rem;
+  padding-bottom: 2rem;
+  font-family: 'Poppins', sans-serif;
+  font-size: 3em;
+  font-weight: 400;
+  letter-spacing: 1px;
+  color: #000;
+}
+
+.banner-section .banner-desc{
+  position: relative;
+  font-size: 1.5em;
+  font-weight: 500;
+}
+
+
+/* Topics Section */
+
+.topics-section{
+position: relative;
+padding-top: 1rem;
+padding-bottom: 1rem;
+}
+
+
+.topics-section .topics-title{
+  position: relative;
+  margin: 0;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  font-family: 'Poppins', sans-serif;
+  font-size: 2em;
+  font-weight: 400;
+  letter-spacing: 1px;
+  color: #000;
+}
+
+.topics-section .topics-desc{
+  position: relative;
+  font-size: 1.5em;
+  font-weight: 600;
+  
+}
+
+.row .topics-title{
+  color: crimson;
+}
+
+
+
+/* Footer */
+.footer{
+  position: relative;
+  padding-top: 3em;
+}
+
+.footer .social-media .footer-list{
+  position: relative;
+  margin: 0 0 1.5em 0;
+  display: inline-block;
+}
+
+.footer .social-media .footer-list li{
+  float: left;
+  margin-right: 2em;
+}
+
+.footer .social-media .footer-list li a{
+  position: relative;
+  font-size: 2em;
+  font-weight: 500;
+  color: #000;
+}
+
+
+/* Top 10 Section */
+.top10-section{
+  position: relative;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
+.top10-section .top10-title{
+  position: relative;
+  padding-top: 2rem;
+  font-family: 'Poppins', sans-serif;
+  font-size: 2em;
+  font-weight: 400;
+  letter-spacing: 1px;
+  color: #000;
+}
+
+.top10-section .top10-origin,
+.top10-section .top10-content{
+  position: relative;
+  font-size: 1.1em;
+  font-weight: 600;
+}

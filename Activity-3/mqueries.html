@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Media Queries</title>
+
+  <style>
+    header {
+      background-color: rgb(88, 187, 97);
+      height: 100px;
+      font-weight: bold;
+      font-size: 3.5em;
+      text-align: center;
+      padding: 35px;
+    }
+
+    .container {
+      display: flex;
+      flex-direction: column;
+    }
+
+    nav {
+      background-color: rgb(66, 66, 66);
+      height: 8vh;
+      font-weight: bold;
+      font-size: 2em;
+      padding-top: 30px;
+      color: white;
+    }
+
+    .nav-content {
+      margin: 1em;
+    }
+
+    .sections {
+      display: flex;
+      flex-direction: row;
+
+    }
+
+    .content {
+      border: 1px solid rgb(88, 187, 97);
+      width: 100%;
+      padding: 4em;
+    }
+
+    .title-content {
+      font-weight: bold;
+      font-size: 2em;
+    }
+
+    @media only screen and (max-width: 2000px) {
+      header {
+        background-color: orange;
+      }
+
+    }
+      @media only screen and (max-width: 1000px) {
+        header {
+          background-color: blue;
+        }
+
+        #sports {
+          display: none;
+        }
+
+      }
+
+      @media only screen and (max-width: 780px) {
+        header {
+          background-color: red;
+        }
+
+        #business {
+          display: none;
+
+        }
+
+        #sports {
+          display: none;
+        }
+      }
+  </style>
+
+</head>
+
+<body>
+  <div class="container">
+    <header>
+      Online Magazine
+    </header>
+    <nav>
+      <span class="nav-content">Home</span>
+      <span class="nav-content">About Us</span>
+      <span class="nav-content">Contact Us</span>
+    </nav>
+
+    <article class="sections">
+      <span class="content">
+        <p class="title-content" id="lifestyle">Lifestyle</p>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolor, distinctio culpa. Adipisci itaque libero
+          quam velit harum ad, iure commodi, obcaecati culpa soluta recusandae non necessitatibus a inventore vero eius.
+        </p>
+      </span>
+      <span class="content" id="business">
+        <p class="title-content">Business</p>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolor, distinctio culpa. Adipisci itaque libero
+          quam velit harum ad, iure commodi, obcaecati culpa soluta recusandae non necessitatibus a inventore vero eius.
+        </p>
+      </span>
+      <span class="content" id="sports">
+        <p class="title-content">Sports</p>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolor, distinctio culpa. Adipisci itaque libero
+          quam velit harum ad, iure commodi, obcaecati culpa soluta recusandae non necessitatibus a inventore vero eius.
+        </p>
+      </span>
+    </article>
+  </div>
+
+</body>
+
+</html>

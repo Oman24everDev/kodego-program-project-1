@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Project 1</title>
+  <!--Google Fonts-->
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700&display=swap"
+    rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300&display=swap" rel="stylesheet">
+
+  <!--Bootstrap CSS-->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+
+  <!--Box Icon-->
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+  <!--CSS Style-->
+  <link rel="stylesheet" href="/Project 1/css/style.css">
+
+  <!--For Banner Image CSS Internal-->
+  <style>
+    .banner-image {
+      background-image: url('images/home-banner.jpg');
+      background-size: cover;
+    }
+  </style>
+</head>
+
+<body>
+
+  <!--Main Container Start-->
+  <div class="main-wrapper">
+
+    <!--Header Start-->
+    <div class="header">
+
+      <!--Nav Bar Start-->
+      <nav class="navbar navbar-expand-lg fixed-top align-content-md-stretch">
+        <div class="container">
+          <a class="navbar-brand" href="index.html">
+            <img src="images/bulldog-logo.png" width="50" alt="">
+          </a>
+
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+            aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ms-auto mt-2 mt-lg-0">
+
+              <li class="nav-item">
+                <a class="nav-link me-3" href="index.html">Home</a>
+              </li>
+              <li class="nav-item me-3">
+                <a class="nav-link" href="/Project 1/topics.html">Topics</a>
+              </li>
+              <li class="nav-item me-3">
+                <a class="nav-link" href="/Project 1/top10.html">Top 10 Dog Breeds</a>
+              </li>
+              <li class="nav-item me-3">
+                <a class="nav-link" href="/Project 1/all-dog.html">View All Dog Breeds</a>
+              </li>
+              <li class="nav-item me-3">
+                <a class="nav-link" href="/Project 1/about.html">About Us</a>
+              </li>
+
+            </ul>
+
+          </div>
+        </div>
+      </nav>
+      <!--Banner Image Start-->
+      <div class="banner-image w-100 vh-100 d-flex justify-content-center align-items-center">
+        <div class="content text-center">
+          <h1 class="text-dark fw-bolder">HOME</h1>
+        </div>
+      </div>
+      <!--Banner Image End-->
+
+      <!--Nav Bar End-->
+    </div>
+    <!--Header End-->
+
+    <!--Banner Content Start-->
+    <div class="banner-section">
+      <div class="container">
+        <div class="row justify-content-center align-items-center">
+          <div class="col-lg-6">
+            <h1 class="banner-title">
+              Hello! Welcome to our page!
+            </h1>
+            <p class="banner-desc">
+              You can choose or review a dog breed you want!
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet, error.
+            </p>
+            <p class="banner-desc">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis doloribus, eveniet facilis explicabo
+              quaerat repellendus ducimus dolorem! Beatae aliquid officia placeat, aut eius explicabo impedit vel labore
+              dolorum harum amet!
+            </p>
+
+          </div>
+          <div class="col-lg-6 col-md-8">
+            <img src="images/doushouqi-dog.svg" alt="">
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--Banner Content End-->
+  </div>
+
+  <!--Main Container End-->
+
+  <!--Footer Start-->
+
+  <div class="footer">
+    <div class="container">
+      <div class="social-media text-center">
+        <hr>
+        <ul class="footer-list">
+          <li><a href="#"><i class='bx bxl-facebook-circle'></i></a></li>
+          <li><a href="#"><i class='bx bxl-instagram-alt'></i></a></li>
+          <li><a href="#"><i class='bx bxl-gmail'></i></a></li>
+          <li><a href="#"><i class='bx bxl-github'></i></a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <!--Footer End-->
+
+
+  <!--Bootstrap JS-->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous">
+    </script>
+
+  <script>
+    const nav = document.querySelector("nav");
+
+    window.addEventListener("scroll", function () {
+      if (window.pageYOffset > 100) {
+        nav.classList.add("bg-secondary", "shadow");
+      }
+      else {
+        nav.classList.remove("bg-secondary", "shadow");
+      }
+    })
+  </script>
+</body>
+
+</html>

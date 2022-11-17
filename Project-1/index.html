@@ -77,53 +77,109 @@
         </div>
       </nav>
 
-      <!--Banner Image Start-->
-      <div class="banner-image w-auto vh-100 d-flex justify-content-center align-items-center">
+      <!--Banner Content Start-->
+      <div class="banner-image w-auto vh-100">
         <div class="content text-center">
-          <h1 class="text-dark fw-bold">HOME</h1>
+          <p class="text-dark fw-bold fs-1">Welcome to choose-dog.com</p>
+          <p class="text-dark fw-bold fs-2">You can pick a dog you want to adopt, just click below!</p>
+          <!--Adopt Modal Start-->
+          <row id="adoptModal" class="d-flex justify-content-center p-3">
+            <!-- Button trigger modal -->
+            <button type="button" class="btn btn-outline-dark" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+              <h3 class="fw-bold">adopt one now</h3>
+            </button>
+
+            <!-- Modal -->
+            <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+              aria-labelledby="staticBackdropLabel" aria-hidden="true">
+              <div class="modal-dialog">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="staticBackdropLabel">Modal title</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                  </div>
+                  <!--Form-->
+                  <div class="modal-body">
+                    ...
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-outline-dark fw-bold fs-5">
+                      submit
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </row>
+          <!--Adopt Modal End-->
         </div>
       </div>
-      <!--Banner Image End-->
+      <!--Banner Content End-->
+
 
       <!--Nav Bar End-->
     </div>
     <!--Header End-->
 
-    <!--Banner Content Start-->
-    <div class="banner-section">
-      <div class="container">
-        <div class="row justify-content-center align-items-center">
-          <div class="col-lg-4">
-            <h1 class="banner-title">
-              Hello! Welcome to our page!
-            </h1>
-            <p class="banner-desc">
-              You can choose or review a dog breed you want!
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet, error.
-            </p>
-            <p class="banner-desc">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis doloribus, eveniet facilis explicabo
-              quaerat repellendus ducimus dolorem! Beatae aliquid officia placeat, aut eius explicabo impedit vel labore
-              dolorum harum amet!
-            </p>
+    <hr>
 
+    <!--Carousel Content Start-->
+    <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="false">
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+          aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+          aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+          aria-label="Slide 3"></button>
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <!--Carousel Image 1-->
+          <img src="images/carousel1.jpg" class="d-block w-100" alt="">
+          <div class="carousel-caption">
+            <h1 class="fw-bold">Choose a right companion dog for you!</h1>
+            <p class="fs-5 fw-bold">Once you adopt, this is a decade of commitment that you will take care of them instantly!</p>
           </div>
-          <div class="col-lg-8 col-md-8">
-            <img src="/Project-1/images/home-content-image2.jpg" alt="">
+        </div>
+        <div class="carousel-item">
+          <!--Carousel Image 2-->
+          <img src="images/carousel2.jpg" class="d-block w-100" alt="">
+          <div class="carousel-caption">
+            <h1 class="fw-bold">Choose a right companion dog for you!</h1>
+            <p class="fs-5 fw-bold">Once you adopt, this is a decade of commitment that you will take care of them instantly!</p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <!--Carousel Image 3-->
+          <img src="images/carousel3.jpg" class="d-block w-100" alt="">
+          <div class="carousel-caption">
+            <h1 class="fw-bold">Choose a right companion dog for you!</h1>
+            <p class="fs-5 fw-bold">Once you adopt, this is a decade of commitment that you will take care of them instantly!</p>
           </div>
         </div>
       </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+        data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+        data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
     </div>
-    <!--Banner Content End-->
-  </div>
 
+    <!--Carousel Content End-->
+  </div>
   <!--Main Container End-->
 
-  <!--Footer Start-->
 
+  <!--Footer Start-->
   <div class="footer">
     <div class="container">
-      <div class="social-media text-center">
+      <div class="social-media text-start">
         <hr>
         <ul class="footer-list">
           <li><a href="#"><i class='bx bxl-facebook-circle'></i></a></li>

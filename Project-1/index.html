@@ -76,6 +76,7 @@
           </div>
         </div>
       </nav>
+      <!--Nav Bar End-->
 
       <!--Banner Content Start-->
       <div class="banner-image w-auto vh-100">
@@ -95,12 +96,138 @@
               <div class="modal-dialog">
                 <div class="modal-content">
                   <div class="modal-header">
-                    <h1 class="modal-title fs-5" id="staticBackdropLabel">Modal title</h1>
+                    <h1 class="modal-title fs-5 fw-bold" id="staticBackdropLabel">Please fill up the form</h1>
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                   </div>
                   <!--Form-->
                   <div class="modal-body">
-                    ...
+                    <form class="row g-3">
+                      <div class="col-md-12">
+                        <label for="inputEmail4" class="form-label fw-bold">Email</label>
+                        <input type="email" class="form-control" id="inputEmail4" placeholder="Ex: juan@gmail.com">
+                      </div>
+                      <div class="col-md-12">
+                        <label for="inputPassword4" class="form-label fw-bold">Password</label>
+                        <input type="password" class="form-control" id="inputPassword4">
+                      </div>
+                      <div class="col-md-12">
+                        <label for="inputPassword4" class="form-label fw-bold">Confirm Password</label>
+                        <input type="password" class="form-control" id="inputPassword4">
+                      </div>
+                      <div class="col-12">
+                        <label for="inputAddress" class="form-label fw-bold">Street Address</label>
+                        <input type="text" class="form-control" id="inputAddress" placeholder="Ex: 1234 Main St">
+                      </div>
+                      <div class="col-12">
+                        <label for="inputAddress2" class="form-label fw-bold">Barangay / City</label>
+                        <input type="text" class="form-control" id="inputAddress2"
+                          placeholder="Ex: Poblacion I, Makati City">
+                      </div>
+                      <div class="col-md-4">
+                        <label for="inputState" class="form-label fw-bold">Province</label>
+                         <!--Province Start-->
+                        <select id="inputState" class="form-select">                        
+                          <option selected></option>
+                          <option>Abra</option>
+                          <option>Agusan del Norte</option>
+                          <option>Agusan del Sur</option>
+                          <option>Aklan</option>
+                          <option>Albay</option>
+                          <option>Antique</option>
+                          <option>Apayao</option>
+                          <option>Aurora</option>
+                          <option>Basilan</option>
+                          <option>Bataan</option>
+                          <option>Batanes</option>
+                          <option>Batangas</option>
+                          <option>Benguet</option>
+                          <option>Biliran</option>
+                          <option>Bohol</option>
+                          <option>Bukidnon</option>
+                          <option>Bulacan</option>
+                          <option>Cagayan</option>
+                          <option>Camarines Norte</option>
+                          <option>Camarines Sur</option>
+                          <option>Camiguin</option>
+                          <option>Capiz</option>
+                          <option>Catanduanes</option>
+                          <option>Cavite</option>
+                          <option>Cebu</option>
+                          <option>Cotabato</option>
+                          <option>Davao de Oro</option>
+                          <option>Davao del Norte</option>
+                          <option>Davao del Sur</option>
+                          <option>Davao Occidental</option>
+                          <option>Davao Oriental</option>
+                          <option>Dinagat Islands</option>
+                          <option>Eastern Samar</option>
+                          <option>Guimaras</option>
+                          <option>Ifugao</option>
+                          <option>Ilocos Norte</option>
+                          <option>Ilocos Sur</option>
+                          <option>Iloilo</option>
+                          <option>Isabela</option>
+                          <option>Kalinga</option>
+                          <option>La Union</option>
+                          <option>Laguna</option>
+                          <option>Lanao del Norte</option>
+                          <option>Lanao del Sur</option>
+                          <option>Leyte</option>
+                          <option>Maguindanao del Norte</option>
+                          <option>Maguindanao del Sur</option>
+                          <option>Marinduque</option>
+                          <option>Masbate</option>
+                          <option>Metro Manila</option>
+                          <option>Misamis Occidental</option>
+                          <option>Misamis Oriental</option>
+                          <option>Mountain Province</option>
+                          <option>Negros Occidental</option>
+                          <option>Negros Oriental</option>
+                          <option>Northern Samar</option>
+                          <option>Nueva Ecija</option>
+                          <option>Nueva Vizcaya</option>
+                          <option>Occidental Mindoro</option>
+                          <option>Oriental Mindoro</option>
+                          <option>Palawan</option>
+                          <option>Pampanga</option>
+                          <option>Pangasinan</option>
+                          <option>Quezon</option>
+                          <option>Quirino</option>
+                          <option>Rizal</option>
+                          <option>Romblon</option>
+                          <option>Samar</option>
+                          <option>Sarangani</option>
+                          <option>Siquijor</option>
+                          <option>Sorsogon</option>
+                          <option>South Cotabato</option>
+                          <option>Southern Leyte</option>
+                          <option>Sultan Kudarat</option>
+                          <option>Sulu</option>
+                          <option>Surigao del Norte</option>
+                          <option>Surigao del Sur</option>
+                          <option>Tarlac</option>
+                          <option>Tawi-Tawi</option>
+                          <option>Zambales</option>
+                          <option>Zamboanga del Norte</option>
+                          <option>Zamboanga del Sur</option>
+                          <option>Zamboanga Sibugay</option>
+                        </select>
+                        <!--Province End-->
+                      </div>
+                      <div class="col-md-4">
+                        <label for="inputZip" class="form-label fw-bold">Zip</label>
+                        <input type="text" class="form-control" id="inputZip">
+                      </div>
+                      <div class="col-12">
+                        <div class="form-check">
+                          <input class="form-check-input" type="checkbox" id="gridCheck">
+                          <label class="form-check-label fw-bold" for="gridCheck">
+                            I HEREBY CERTIFY that the information provided in this form is complete, true and correct to
+                            the best of my knowledge.
+                          </label>
+                        </div>
+                      </div>
+                    </form>
                   </div>
                   <div class="modal-footer">
                     <button type="button" class="btn btn-outline-dark fw-bold fs-5">
@@ -115,9 +242,6 @@
         </div>
       </div>
       <!--Banner Content End-->
-
-
-      <!--Nav Bar End-->
     </div>
     <!--Header End-->
 
@@ -139,7 +263,8 @@
           <img src="images/carousel1.jpg" class="d-block w-100" alt="">
           <div class="carousel-caption pb-5">
             <h1 class="fw-bold">Choose a right companion dog for you!</h1>
-            <p class="fs-5 fw-bold">Once you adopt, this is a decade of commitment that you will take care of them instantly!</p>
+            <p class="fs-5 fw-bold">Once you adopt, this is a decade of commitment that you will take care of them
+              instantly!</p>
           </div>
         </div>
         <div class="carousel-item">
@@ -147,7 +272,8 @@
           <img src="images/carousel2.jpg" class="d-block w-100" alt="">
           <div class="carousel-caption pb-5">
             <h1 class="fw-bold">Choose a right companion dog for you!</h1>
-            <p class="fs-5 fw-bold">Once you adopt, this is a decade of commitment that you will take care of them instantly!</p>
+            <p class="fs-5 fw-bold">Once you adopt, this is a decade of commitment that you will take care of them
+              instantly!</p>
           </div>
         </div>
         <div class="carousel-item">
@@ -155,7 +281,8 @@
           <img src="images/carousel3.jpg" class="d-block w-100" alt="">
           <div class="carousel-caption pb-5">
             <h1 class="fw-bold">Choose a right companion dog for you!</h1>
-            <p class="fs-5 fw-bold">Once you adopt, this is a decade of commitment that you will take care of them instantly!</p>
+            <p class="fs-5 fw-bold">Once you adopt, this is a decade of commitment that you will take care of them
+              instantly!</p>
           </div>
         </div>
       </div>

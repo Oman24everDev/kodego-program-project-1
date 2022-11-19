@@ -163,4 +163,27 @@ padding-bottom: 1rem;
   font-weight: 600;
 }
 
+/* About Section */
+.about-section{
+  padding-top: 2rem;
+}
+
+.about-section .container{
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.about-section img{
+  position: relative;
+  width: 30rem;
+  height: fit-content;
+}
+
+.about-section .about-desc{
+  position: relative;
+  font-size: 1.3em;
+  font-weight: 600;
+}
+
 

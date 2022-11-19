@@ -78,17 +78,49 @@
       </nav>
       <!--Nav Bar End-->
 
-        <!--Banner Image Start-->
-        <div class="banner-image w-100 vh-100 d-flex justify-content-start align-items-start ps-5 pt-5">
-          <div class="content text-start">
-            <h1 class="text-dark fw-bold ms-5 mt-5">ABOUT US</h1>
-          </div>
+      <!--Banner Image Start-->
+      <div class="banner-image w-100 vh-100 d-flex justify-content-start align-items-start ps-5 pt-5">
+        <div class="content text-start">
+          <h1 class="text-dark fw-bold ms-5 mt-5">ABOUT US</h1>
         </div>
-        <!--Banner Image End-->
+      </div>
+      <!--Banner Image End-->
 
     </div>
     <!--Header End-->
     <hr>
+
+    <div class="about-section">
+      <div class="container">
+        <div class="row">
+          <div class="col col-lg-6 d-flex justify-content-end">
+            <img src="images/about.jpg" alt="">
+          </div>
+          <div class="col col-lg-6 pt-5">
+            <h2 class="fw-bold">The Developer</h2>
+            <p class="about-desc">
+              Norman Ralph Mendiola <br>
+              (Soon to be Full-Stack Developer)<br>
+              <br>
+              Choosing a dog can be exciting and nerve-wracking at the same time. After all, you're committing to care for a living, breathing being who will depend on you his entire life! When choosing a new dog, so many questions run through your mind: <br>
+              "What kind of dog should I get?"<br>
+              "What's the best dog breed for me?"<br>
+              "Will he be a good fit with my family?"
+            </p>
+            <br>
+            <br>
+            <p class="about-desc">
+             0 year of work experience in IT as a software engineer. <br>
+             Designed and modified web apps. <br>
+             Analyzed system flow, work processes and problem areas. <br>             
+             Web developer of choose-dog company, inc.              
+            </p>
+
+            <button type="button" class="btn btn-outline-dark fw-bold">@ email me here!</button>
+          </div>
+        </div>
+      </div>
+    </div>
 
   </div>
   <!--Main Container End-->
@@ -115,18 +147,18 @@
     integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
     crossorigin="anonymous"></script>
 
-    <script>
-      const nav = document.querySelector("nav");
-  
-      window.addEventListener("scroll", function () {
-        if (window.pageYOffset > 100) {
-          nav.classList.add("bg-secondary", "shadow");
-        }
-        else {
-          nav.classList.remove("bg-secondary", "shadow");
-        }
-      })
-    </script>
+  <script>
+    const nav = document.querySelector("nav");
+
+    window.addEventListener("scroll", function () {
+      if (window.pageYOffset > 100) {
+        nav.classList.add("bg-secondary", "shadow");
+      }
+      else {
+        nav.classList.remove("bg-secondary", "shadow");
+      }
+    })
+  </script>
 </body>
 
 </html>

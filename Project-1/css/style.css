@@ -117,26 +117,26 @@ padding-bottom: 1rem;
 /* Footer */
 .footer{
   position: relative;
-  padding-top: 3em;
+  margin-bottom: 0.5em;
 }
 
-.footer .social-media .footer-list{
-  position: relative;
-  margin: 0 0 1.5em 0;
+.footer  .footer-list {
   display: inline-block;
 }
 
-.footer .social-media .footer-list li{
+.footer  .footer-list li{
   float: left;
-  margin-right: 2em;
 }
 
-.footer .social-media .footer-list li a{
+.footer  .footer-list li a{
   position: relative;
   font-size: 2em;
   font-weight: 500;
   color: #000;
 }
+
+
+
 
 
 /* Top 10 Section */

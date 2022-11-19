@@ -81,8 +81,9 @@
       <!--Banner Content Start-->
       <div class="banner-image w-auto vh-100">
         <div class="content text-center">
-          <p class="text-dark fw-bold fs-1">Welcome to choose-dog.com</p>
-          <p class="text-dark fw-bold fs-2">You can pick a dog you want to adopt, just click below!</p>
+          <h1 class="text-danger fw-bold">Welcome to choose-dog.com</h1>
+          <p class="text-dark fw-bold fs-2">You can pick a dog you want to adopt, <br>
+            just click below!</p>
           <!--Adopt Modal Start-->
           <row id="adoptModal" class="d-flex justify-content-center p-3">
             <!-- Button trigger modal -->
@@ -339,7 +340,7 @@
     const nav = document.querySelector("nav");
 
     window.addEventListener("scroll", function () {
-      if (window.pageYOffset > 100) {
+      if (window.pageYOffset > 50) {
         nav.classList.add("bg-secondary", "shadow");
       }
       else {

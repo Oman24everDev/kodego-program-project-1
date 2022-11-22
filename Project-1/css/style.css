@@ -20,7 +20,6 @@ img{
 
 /* Links */
 a{
-  text-decoration: none !important;
   color: #999;
   transition: all 0.5s ease-in-out;
 }
@@ -76,6 +75,14 @@ a:hover{
 
 .banner-image .content{
   padding-top: 6rem;
+}
+
+.banner-image .content-about{
+  font-size: 1.8em;
+}
+
+.banner-image .text-dark{
+  font-size: 1.5em;
 }
 
 
@@ -168,15 +175,10 @@ padding-bottom: 1rem;
   padding-top: 2rem;
 }
 
-.about-section .container{
-  display: flex;
-  align-items: center;
-  justify-content: space-around;
-}
 
 .about-section img{
   position: relative;
-  width: 30rem;
+  width: 25rem;
   height: fit-content;
 }
 
@@ -184,6 +186,124 @@ padding-bottom: 1rem;
   position: relative;
   font-size: 1.3em;
   font-weight: 600;
+}
+
+
+
+/* Media Query */
+
+@media only screen and (min-width: 768px) and (max-width: 1024px){
+  .banner-image{
+    background-image: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
+
+
+}
+
+
+
+
+@media only screen and (max-width: 767px){
+  .carousel-caption{
+    bottom: fixed;
+    width: auto;
+  }
+
+  .carousel-caption h1{
+    bottom: fixed;
+    font-size: 1em;
+    color:#c08282;
+  }
+
+  .carousel-caption p{
+    bottom: fixed;
+    font-size: 0.8em;
+    color: #c08282;
+  }
+
+
+
+  .banner-image{
+    background-image: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
+  .banner-image h1{
+    text-align: center;
+    font-size: 1.2em;
+    -webkit-text-stroke-width: 1px;
+  }
+
+  .banner-image p{
+    text-align: center;
+    font-size: 1.3em;
+    -webkit-text-stroke-width: 0.4px;
+  }
+
+  .banner-image .adopt-button{
+    background-color: #000;
+    color: white;
+  }
+
+  .banner-image .top10-head{
+    margin-right: 10em;
+  }
+
+  .banner-image .adopt-button:hover{
+    color: #c08282;
+  }
+
+  .banner-image .content-about{ 
+    padding-inline-start: 6.7em;
+    font-size: 1.2em;
+  }
+
+
+
+  .footer .row,
+  .footer .contacts, 
+  .about-section .about-head
+  {
+     font-size: 0.7em; 
+  }
+
+
+  .footer .footer-list li a{
+    font-size: 1.5em;
+    padding-right: 1px;
+  }
+
+
+  .topics-section img,
+  .top10-section img,
+  .about-section img
+  {
+    width: 75%;
+    margin-left: 2.5rem;
+  }
+
+  .topics-section .topics-title,
+  .top10-section .top10-title
+  {
+    font-size: 1.5em;
+  }
+
+
+  .top10-section .top10-origin,
+  .top10-section .top10-content,
+  .topics-section .topics-desc
+  {
+    font-size: 0.9em;
+  }
+
+
+  
+
+
 }
 
 

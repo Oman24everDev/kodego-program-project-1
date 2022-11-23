@@ -199,8 +199,6 @@ padding-bottom: 1rem;
     background-position: center;
   }
 
-
-
 }
 
 
@@ -274,7 +272,7 @@ padding-bottom: 1rem;
 
   .footer .footer-list li a{
     font-size: 1.5em;
-    padding-right: 1px;
+    padding-right: 7px;
   }
 
 
@@ -300,7 +298,9 @@ padding-bottom: 1rem;
     font-size: 0.9em;
   }
 
-
+  .about-section img{
+    width: 65%;
+  }
   
 
 

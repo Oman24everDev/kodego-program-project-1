@@ -81,6 +81,10 @@ a:hover{
   font-size: 1.8em;
 }
 
+.banner-image .content-top10{
+  padding-left: 5em;
+}
+
 .banner-image .text-dark{
   font-size: 1.5em;
 }
@@ -240,14 +244,12 @@ padding-bottom: 1rem;
     -webkit-text-stroke-width: 0.4px;
   }
 
-  .banner-image .adopt-button{
-    background-color: #000;
-    color: white;
-  }
 
   .banner-image .top10-head{
-    margin-right: 10em;
+    margin-right: 5em;
+    align-items: center;
   }
+
 
   .banner-image .adopt-button:hover{
     color: #c08282;

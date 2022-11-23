@@ -182,6 +182,7 @@ padding-bottom: 1rem;
 
 .about-section img{
   height: auto;
+  border-radius: 8em;
 }
 
 .about-section .about-desc{

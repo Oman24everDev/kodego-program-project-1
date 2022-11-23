@@ -177,9 +177,7 @@ padding-bottom: 1rem;
 
 
 .about-section img{
-  position: relative;
-  width: 25rem;
-  height: fit-content;
+  height: auto;
 }
 
 .about-section .about-desc{
